@@ -1,8 +1,11 @@
 name: 🚀 Run
 
 on:
-  workflow_dispatch:
-
+  pull_request:
+    tags:
+      - "*"
+    branches:
+      - main
 jobs:
   run:
     name: 🚀 Run
